@@ -8,7 +8,7 @@ patch --binary kbd.h fApple-mod-keys.patch
 
 This will give you base functionality of Windows standard mod keys on A1243 keyboard:
 
-LAlt => WinKey
-LCmd => LAlt
-RCmd => AltGr/RAlt
-RAlt => AppsMenu
+> LAlt => WinKey
+> LCmd => LAlt
+> RCmd => AltGr/RAlt
+> RAlt => AppsMenu
