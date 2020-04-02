@@ -1,0 +1,36 @@
+Index: kbd.h
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- kbd.h	(revision 7c0af27c4d708c406a7e9d5b4a3c89bb09997bb2)
++++ kbd.h	(revision 2e7a50b13039611ab6550ab62bd175a0c9e361f2)
+@@ -1086,7 +1086,7 @@
+ #define T35 _EQ(                           OEM_2                     )
+ #define T36 _EQ(                           RSHIFT                    )
+ #define T37 _EQ(                           MULTIPLY                  )
+-#define T38 _EQ(                           LMENU                     )
++#define T38 _EQ(                           LWIN                      ) // fApple "LMENU" => "LWIN"
+ #define T39 _EQ(                           ' '                       )
+ #define T3A _EQ(                           CAPITAL                   )
+ #define T3B _EQ(                           F1                        )
+@@ -1172,7 +1172,7 @@
+ #define X32 _EQ(                           BROWSER_HOME              ) // SpeedRacer
+ #define X35 _EQ(                           DIVIDE                    )
+ #define X37 _EQ(                           SNAPSHOT                  )
+-#define X38 _EQ(                           RMENU                     )
++#define X38 _EQ(                           APPS                      ) // fApple "RMENU" => "APPS"
+ #define X46 _EQ(                           CANCEL                    )
+ #define X47 _EQ(                           HOME                      )
+ #define X48 _EQ(                           UP                        )
+@@ -1184,8 +1184,8 @@
+ #define X51 _NE(NEXT,    F1,      NEXT,    NEXT,    _none_, OEM_PA2  )
+ #define X52 _EQ(                           INSERT                    )
+ #define X53 _EQ(                           DELETE                    )
+-#define X5B _EQ(                           LWIN                      )
+-#define X5C _EQ(                           RWIN                      )
++#define X5B _EQ(                           LMENU                     ) // fApple "LWIN" => "LMENU"
++#define X5C _EQ(                           RMENU                     ) // fApple "RWIN" => "RMENU"
+ #define X5D _EQ(                           APPS                      )
+ #define X5E _EQ(                           POWER                     )
+ #define X5F _EQ(                           SLEEP                     ) // SpeedRacer
